@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  section {
+    break-inside: avoid;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .experience-entry-card {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
