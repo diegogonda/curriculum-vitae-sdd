@@ -23,6 +23,7 @@ import type { Header } from '../../data';
             <a
               [href]="contact.href"
               [target]="contact.type === 'portfolio' || contact.type === 'linkedin' ? '_blank' : '_self'"
+              [attr.rel]="contact.type === 'portfolio' || contact.type === 'linkedin' ? 'noopener noreferrer' : null"
               class="hover:text-slate-900 underline underline-offset-2"
             >
               @switch (contact.type) {

@@ -1,4 +1,5 @@
 import { Component, inject, signal, effect, afterNextRender } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 import { LocaleService } from './services/locale.service';
 import { LocaleToggle } from './components/locale-toggle/locale-toggle';
 import { HeroSectionComponent } from './components/hero-section/hero-section';
@@ -75,8 +76,25 @@ export class App {
   readonly locale = this.localeService.locale;
   readonly navItems = NAV_ITEMS;
   readonly activeSection = signal('hero');
+  private readonly title = inject(Title);
+  private readonly meta = inject(Meta);
 
   constructor() {
+    effect(() => {
+      const t = this.locale();
+      this.title.setTitle(
+        t === 'es'
+          ? 'Diego Gonda — Arquitecto de Software | CV'
+          : 'Diego Gonda — Software Architect | CV'
+      );
+      this.meta.updateTag({
+        name: 'description',
+        content:
+          t === 'es'
+            ? 'CV de Diego Gonda, Arquitecto de Software con 12+ años en microservicios, DevOps, liderazgo técnico e IA.'
+            : 'Diego Gonda CV — Software Architect with 12+ years in microservices, DevOps, technical leadership, and AI.'
+      });
+    });
     afterNextRender(() => {
       const observer = new IntersectionObserver(
         (entries) => {
