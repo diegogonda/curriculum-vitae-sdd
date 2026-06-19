@@ -1,0 +1,58 @@
+project: curriculum-vitae-sdd
+detected_languages:
+  - TypeScript
+  - HTML
+  - CSS
+  - JavaScript (Node)
+frameworks:
+  - Angular (v21.x)
+  - Express (server runtime for SSR)
+  - Tailwind CSS
+test_commands:
+  - "ng test"
+  - "npm test"
+  - "node --version (runtime)"
+ci_files: []
+sdd_init:
+  strict_tdd: true
+  rationale: >-
+    Project includes a test runner and test configuration: package.json defines
+    a "test" script ("ng test"), tsconfig.spec.json references
+    vitest/globals and there are existing spec files (src/app/app.spec.ts).
+    While there is no CI configuration enforcing tests, presence of test
+    tooling and specs justifies enabling strict TDD by default.
+discovered_conventions:
+  project_layout:
+    - src/ (application source)
+    - src/app/ (Angular app components)
+    - src/server.ts (SSR express entry)
+    - dist/ (build output)
+  typescript: true
+  angular_cli: true
+  formatting: prettier (.prettierrc present)
+  packaging: npm (package.json, packageManager: npm@10.9.2)
+  openspec: true (openspec/ exists with config and specs)
+code_quality_tools:
+  - prettier: true
+  - eslint: false (no eslint config found)
+  - husky/pre-commit: false (no hooks detected)
+discovered_openspec:
+  - openspec/config.yaml
+  - openspec/specs/** (multiple spec.md files)
+  - openspec/changes/archive/** (.openspec.yaml present)
+files_to_check_for_future_phases:
+  - package.json
+  - tsconfig.spec.json
+  - tsconfig.json
+  - src/**/*.spec.ts
+  - src/app/app.spec.ts
+  - openspec/config.yaml
+  - .atl/skill-registry.md
+  - .prettierrc
+  - README.md
+notes:
+  testing_capabilities:
+    runner: ng test (Angular CLI) backed by Vitest devDependency
+    spec_files: present (unit specs under src/)
+    coverage: not explicitly configured (no coverage config found)
+  ci_enforcement: no CI workflows detected; tests not enforced by CI in repo

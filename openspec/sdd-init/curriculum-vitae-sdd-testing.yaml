@@ -1,0 +1,21 @@
+project: curriculum-vitae-sdd
+testing:
+  runner:
+    - name: "Angular CLI (ng test)"
+      command: "ng test"
+      note: "Defined in package.json scripts; runs Angular unit tests."
+  frameworks:
+    - vitest: '^4.0.8' # present as devDependency and referenced in tsconfig.spec.json
+  spec_files:
+    pattern: "src/**/*.spec.ts"
+    examples:
+      - src/app/app.spec.ts
+  coverage: false
+  coverage_command: null
+  ci_integration: false
+  strict_tdd: true
+  rationale: >-
+    The repository defines a test script ("ng test"), includes spec files
+    (src/**/*.spec.ts), and tsconfig.spec.json references vitest/globals. No
+    CI workflows were found enforcing tests, but local test tooling and
+    existing specs justify enabling strict TDD by default for SDD phases.
