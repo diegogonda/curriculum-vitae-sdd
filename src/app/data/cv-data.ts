@@ -39,7 +39,7 @@ const es: CvData = {
     items: [
       { value: '12+', label: 'Años en desarrollo de software', context: 'Experiencia técnica acumulada desde 2013' },
       { value: '4', label: 'Roles técnicos clave', context: 'Trayectoria en liderazgo, full-stack y delivery' },
-      { value: '6', label: 'Dominios de conocimiento', context: 'Arquitectura, frontend, DevOps, liderazgo, sistemas y CMS' },
+      { value: '6', label: 'Dominios de conocimiento', context: 'IA, liderazgo, DevOps, arquitectura, sistemas y frameworks/CMS' },
     ],
   },
   aboutMe: {
@@ -182,12 +182,12 @@ const es: CvData = {
   skills: {
     title: 'Habilidades',
     categories: [
-      { name: 'Arquitectura y Desarrollo', skills: ['PHP 8+', 'Java', 'TypeScript', 'Python', 'Microservicios', 'APIs REST', 'SQL'] },
-      { name: 'Frameworks y Frontend', skills: ['Symfony', 'CodeIgniter', 'Angular', 'React', 'Slim', 'jQuery'] },
-      { name: 'DevOps y Observabilidad', skills: ['Docker', 'GitLab CI', 'Jenkins', 'NGINX', 'Grafana', 'Prometheus', 'RabbitMQ', 'Keycloak'] },
+      { name: 'IA / AI', skills: ['SDD (Spec-Driven Development)', 'Prompt Engineering', 'LLMs (ChatGPT, Claude)', 'AI-assisted development (Copilot, Cursor, OpenCode)'] },
       { name: 'Liderazgo Técnico', skills: ['Definición de requerimientos', 'Diseño de soluciones', 'Code review', 'Mentoring', 'Priorización por valor'] },
+      { name: 'DevOps y Observabilidad', skills: ['Docker', 'GitLab CI', 'Jenkins', 'NGINX', 'Grafana', 'Prometheus', 'RabbitMQ', 'Keycloak'] },
+      { name: 'Arquitectura y Desarrollo', skills: ['PHP 8+', 'Java', 'TypeScript', 'Python', 'Microservicios', 'APIs REST', 'SQL'] },
       { name: 'Sistemas y Datos', skills: ['Debian', 'Ubuntu', 'Windows', 'MySQL', 'Redis', 'MongoDB'] },
-      { name: 'CMS', skills: ['PrestaShop', 'WordPress (Plugin development)'] },
+      { name: 'Frameworks y CMS', skills: ['Symfony', 'CodeIgniter', 'Angular', 'React', 'Slim', 'jQuery', 'PrestaShop', 'WordPress (Plugin development)'] },
     ],
   },
   footer: {
@@ -235,7 +235,7 @@ const en: CvData = {
     items: [
       { value: '12+', label: 'Years in software development', context: 'Technical track record since 2013' },
       { value: '4', label: 'Core technical roles', context: 'Experience across leadership, full-stack, and delivery' },
-      { value: '6', label: 'Knowledge domains', context: 'Architecture, frontend, DevOps, leadership, systems, and CMS' },
+      { value: '6', label: 'Knowledge domains', context: 'AI, leadership, DevOps, architecture, systems, and frameworks/CMS' },
     ],
   },
   aboutMe: {
@@ -378,12 +378,12 @@ const en: CvData = {
   skills: {
     title: 'Skills',
     categories: [
-      { name: 'Architecture and Development', skills: ['PHP 8+', 'Java', 'TypeScript', 'Python', 'Microservices', 'REST APIs', 'SQL'] },
-      { name: 'Frameworks and Frontend', skills: ['Symfony', 'CodeIgniter', 'Angular', 'React', 'Slim', 'jQuery'] },
-      { name: 'DevOps and Observability', skills: ['Docker', 'GitLab CI', 'Jenkins', 'NGINX', 'Grafana', 'Prometheus', 'RabbitMQ', 'Keycloak'] },
+      { name: 'IA / AI', skills: ['SDD (Spec-Driven Development)', 'Prompt Engineering', 'LLMs (ChatGPT, Claude)', 'AI-assisted development (Copilot, Cursor, OpenCode)'] },
       { name: 'Technical Leadership', skills: ['Requirements definition', 'Solution design', 'Code review', 'Mentoring', 'Value-driven prioritization'] },
+      { name: 'DevOps and Observability', skills: ['Docker', 'GitLab CI', 'Jenkins', 'NGINX', 'Grafana', 'Prometheus', 'RabbitMQ', 'Keycloak'] },
+      { name: 'Architecture and Development', skills: ['PHP 8+', 'Java', 'TypeScript', 'Python', 'Microservices', 'REST APIs', 'SQL'] },
       { name: 'Systems and Data', skills: ['Debian', 'Ubuntu', 'Windows', 'MySQL', 'Redis', 'MongoDB'] },
-      { name: 'CMS', skills: ['PrestaShop', 'WordPress (Plugin development)'] },
+      { name: 'Frameworks and CMS', skills: ['Symfony', 'CodeIgniter', 'Angular', 'React', 'Slim', 'jQuery', 'PrestaShop', 'WordPress (Plugin development)'] },
     ],
   },
   footer: {

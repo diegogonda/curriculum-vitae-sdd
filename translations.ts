@@ -70,7 +70,7 @@ export const translations = {
         {
           value: "6",
           label: "Dominios de conocimiento",
-          context: "Arquitectura, frontend, DevOps, liderazgo, sistemas y CMS"
+          context: "IA, liderazgo, DevOps, arquitectura, sistemas y frameworks/CMS"
         }
       ]
     },
@@ -197,28 +197,28 @@ export const translations = {
       title: "Habilidades",
       categories: [
         {
-          category: "Arquitectura y Desarrollo",
-          skills: ["PHP 8+", "Java", "TypeScript", "Python", "Microservicios", "APIs REST", "SQL"]
-        },
-        {
-          category: "Frameworks y Frontend",
-          skills: ["Symfony", "CodeIgniter", "Angular", "React", "Slim", "jQuery"]
-        },
-        {
-          category: "DevOps y Observabilidad",
-          skills: ["Docker", "GitLab CI", "Jenkins", "NGINX", "Grafana", "Prometheus", "RabbitMQ", "Keycloak"]
+          category: "IA / AI",
+          skills: ["SDD (Spec-Driven Development)", "Prompt Engineering", "LLMs (ChatGPT, Claude)", "AI-assisted development (Copilot, Cursor, OpenCode)"]
         },
         {
           category: "Liderazgo Técnico",
           skills: ["Definición de requerimientos", "Diseño de soluciones", "Code review", "Mentoring", "Priorización por valor"]
         },
         {
+          category: "DevOps y Observabilidad",
+          skills: ["Docker", "GitLab CI", "Jenkins", "NGINX", "Grafana", "Prometheus", "RabbitMQ", "Keycloak"]
+        },
+        {
+          category: "Arquitectura y Desarrollo",
+          skills: ["PHP 8+", "Java", "TypeScript", "Python", "Microservicios", "APIs REST", "SQL"]
+        },
+        {
           category: "Sistemas y Datos",
           skills: ["Debian", "Ubuntu", "Windows", "MySQL", "Redis", "MongoDB"]
         },
         {
-          category: "CMS",
-          skills: ["PrestaShop", "WordPress (Plugin development)"]
+          category: "Frameworks y CMS",
+          skills: ["Symfony", "CodeIgniter", "Angular", "React", "Slim", "jQuery", "PrestaShop", "WordPress (Plugin development)"]
         }
       ]
     },
@@ -298,7 +298,7 @@ export const translations = {
         {
           value: "6",
           label: "Knowledge domains",
-          context: "Architecture, frontend, DevOps, leadership, systems, and CMS"
+          context: "AI, leadership, DevOps, architecture, systems, and frameworks/CMS"
         }
       ]
     },
@@ -425,28 +425,28 @@ export const translations = {
       title: "Skills",
       categories: [
         {
-          category: "Architecture and Development",
-          skills: ["PHP 8+", "Java", "TypeScript", "Python", "Microservices", "REST APIs", "SQL"]
-        },
-        {
-          category: "Frameworks and Frontend",
-          skills: ["Symfony", "CodeIgniter", "Angular", "React", "Slim", "jQuery"]
-        },
-        {
-          category: "DevOps and Observability",
-          skills: ["Docker", "GitLab CI", "Jenkins", "NGINX", "Grafana", "Prometheus", "RabbitMQ", "Keycloak"]
+          category: "IA / AI",
+          skills: ["SDD (Spec-Driven Development)", "Prompt Engineering", "LLMs (ChatGPT, Claude)", "AI-assisted development (Copilot, Cursor, OpenCode)"]
         },
         {
           category: "Technical Leadership",
           skills: ["Requirements definition", "Solution design", "Code review", "Mentoring", "Value-driven prioritization"]
         },
         {
+          category: "DevOps and Observability",
+          skills: ["Docker", "GitLab CI", "Jenkins", "NGINX", "Grafana", "Prometheus", "RabbitMQ", "Keycloak"]
+        },
+        {
+          category: "Architecture and Development",
+          skills: ["PHP 8+", "Java", "TypeScript", "Python", "Microservices", "REST APIs", "SQL"]
+        },
+        {
           category: "Systems and Data",
           skills: ["Debian", "Ubuntu", "Windows", "MySQL", "Redis", "MongoDB"]
         },
         {
-          category: "CMS",
-          skills: ["PrestaShop", "WordPress (Plugin development)"]
+          category: "Frameworks and CMS",
+          skills: ["Symfony", "CodeIgniter", "Angular", "React", "Slim", "jQuery", "PrestaShop", "WordPress (Plugin development)"]
         }
       ]
     },
